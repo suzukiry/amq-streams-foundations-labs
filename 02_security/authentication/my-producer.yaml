@@ -7,14 +7,15 @@ metadata:
 spec:
   authentication:
     type: tls
-  authorization:
-    type: simple
-    acls:
-      - resource:
-          type: topic
-          name: my-topic
-        operation: Write
-      - resource:
-          type: topic
-          name: my-topic
-        operation: Describe
+# Remove following # at "5. Authorize Connections"
+#  authorization:
+#    type: simple
+#    acls:
+#      - resource:
+#          type: topic
+#          name: my-topic
+#        operation: Write
+#      - resource:
+#          type: topic
+#          name: my-topic
+#        operation: Describe

@@ -7,18 +7,19 @@ metadata:
 spec:
   authentication:
     type: tls
-  authorization:
-    type: simple
-    acls:
-      - resource:
-          type: topic
-          name: my-topic
-        operation: Read
-      - resource:
-          type: topic
-          name: my-topic
-        operation: Describe
-      - resource:
-          type: group
-          name: my-hello-world-consumer
-        operation: Read
+# Remove following # at "5. Authorize Connections"
+#  authorization:
+#    type: simple
+#    acls:
+#      - resource:
+#          type: topic
+#          name: my-topic
+#        operation: Read
+#      - resource:
+#          type: topic
+#          name: my-topic
+#        operation: Describe
+#      - resource:
+#          type: group
+#          name: my-hello-world-consumer
+#        operation: Read
